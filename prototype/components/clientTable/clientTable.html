@@ -1,0 +1,51 @@
+<div class="mt-4">
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-light px-3 border" type="button">
+      <img src="/prototype/components/clientTable/svg/search.svg" width="20" height="20" alt="Search client">
+    </button>
+    <input class="form-control" placeholder="Search client name" aria-label="Search client name">
+  </div>
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <a href="/prototype/pages/client.html">Maria Lucia</a>
+        </td>
+        <td>+55 (11) 9975-1539</td>
+        <td>11/22/2026</td>
+        <td>
+          <img src="/prototype/components/clientTable/svg/trash3-fill.svg" width="20" height="20" alt="Delete client">
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+          <a href="/prototype/pages/client.html">Mary Phillips</a>
+        </td>
+        <td>+1 (415) 455-0196</td>
+        <td>01/29/2026</td>
+        <td>
+          <img src="/prototype/components/clientTable/svg/trash3-fill.svg" width="20" height="20" alt="Delete client">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<div id="paginator"></div>
+</div>
+
+<script>
+  $(function () {
+    $("#paginator").load("../components/paginator/paginator.html");
+  })
+</script>
