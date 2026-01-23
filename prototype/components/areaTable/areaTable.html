@@ -1,0 +1,54 @@
+<div class="mt-4">
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-light px-3 border" type="button">
+      <img src="/prototype/components/areaTable/svg/search.svg" width="20" height="20" alt="Search area">
+    </button>
+    <input class="form-control" placeholder="Search area name" aria-label="Search area name">
+  </div>
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <a href="/prototype/pages/area.html">General Practitioner</a>
+        </td>
+        <td>
+          <img src="/prototype/components/areaTable/svg/trash3-fill.svg" width="20" height="20" alt="Delete area">
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+          <a href="/prototype/pages/area.html">Physiotherapist</a>
+        </td>
+        <td>
+          <img src="/prototype/components/areaTable/svg/trash3-fill.svg" width="20" height="20" alt="Delete area">
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>
+          <a href="/prototype/pages/area.html">Cardiologist</a>
+        </td>
+        <td>
+          <img src="/prototype/components/areaTable/svg/trash3-fill.svg" width="20" height="20" alt="Delete area">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="paginator"></div>
+</div>
+
+<script>
+  $(function () {
+    $("#paginator").load("../components/paginator/paginator.html");
+  })
+</script>
