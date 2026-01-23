@@ -1,0 +1,97 @@
+<div class="mt-4">
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-light px-3 border" type="button">
+      <img src="/prototype/components/professionalTable/svg/search.svg" width="20" height="20"
+        alt="Search professional">
+    </button>
+    <input class="form-control" placeholder="Search professional name" aria-label="Search professional name">
+  </div>
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Active Status</th>
+        <th scope="col">Areas</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <a href="/prototype/pages/professional.html">Dr. Anna Brown</a>
+        </td>
+        <td>+55 (11) 5663-1539</td>
+        <td>
+          <div class="badge bg-primary">
+            active
+          </div>
+        </td>
+        <td>
+          <div class="badge bg-secondary">
+            General Practitioner
+          </div>
+          <div class="badge bg-secondary">
+            Physiotherapist
+          </div>
+        </td>
+        <td>
+          <img src="/prototype/components/professionalTable/svg/trash3-fill.svg" width="20" height="20"
+            alt="Delete professional">
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+          <a href="/prototype/pages/professional.html">Dr. Ralph Williams</a>
+        </td>
+        <td>+1 (415) 455-1688</td>
+        <td>
+          <div class="badge bg-primary">
+            active
+          </div>
+        </td>
+        <td>
+          <div class="badge bg-secondary">
+            Cardiologist
+          </div>
+        </td>
+        <td>
+          <img src="/prototype/components/professionalTable/svg/trash3-fill.svg" width="20" height="20"
+            alt="Delete professional">
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>
+          <a href="/prototype/pages/professional.html">Dr. SUS</a>
+        </td>
+        <td>+1 (415) 455-455</td>
+        <td>
+          <div class="badge bg-secondary">
+            inactive
+          </div>
+        </td>
+        <td>
+          <div class="badge bg-secondary">
+            Cardiologist
+          </div>
+        </td>
+        <td>
+          <img src="/prototype/components/professionalTable/svg/trash3-fill.svg" width="20" height="20"
+            alt="Delete professional">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="paginator"></div>
+</div>
+
+<script>
+  $(function () {
+    $("#paginator").load("../components/paginator/paginator.html");
+  })
+</script>
