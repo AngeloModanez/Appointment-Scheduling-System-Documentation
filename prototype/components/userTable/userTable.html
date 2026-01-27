@@ -1,0 +1,51 @@
+<div class="mt-4">
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-light px-3 border" type="button">
+      <img src="/prototype/components/userTable/svg/search.svg" width="20" height="20" alt="Search user">
+    </button>
+    <input class="form-control" placeholder="Search user name" aria-label="Search user name">
+  </div>
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Role</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <a href="/prototype/pages/user.html">John Doe</a>
+        </td>
+        <td>johndoe192@gmail.com</td>
+        <td>Administrator</td>
+        <td>
+          <img src="/prototype/components/userTable/svg/trash3-fill.svg" width="20" height="20" alt="Delete user">
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+          <a href="/prototype/pages/user.html">Joane Lues</a>
+        </td>
+        <td>joanelues34@hotmail.com</td>
+        <td>Operator</td>
+        <td>
+          <img src="/prototype/components/userTable/svg/trash3-fill.svg" width="20" height="20" alt="Delete user">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<div id="paginator"></div>
+</div>
+
+<script>
+  $(function () {
+    $("#paginator").load("../components/paginator/paginator.html");
+  })
+</script>
