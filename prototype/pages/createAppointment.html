@@ -14,20 +14,22 @@
 <body>
   <div id="nav-bar"></div>
 
-  <div class="container text-center">
-    <div class="display-6 my-2">Schedule Appointment:</div>
-    <div class="row">
-      <div class="col-6 border rounded-start shadow-sm p-4">
-        <div id="form-appointment"></div>
+  <div class="container my-5">
+    <div class="border rounded shadow-sm p-4">
+      <div class="display-6 mb-4">Schedule Appointment:</div>
+      <div class="row gap-4 justify-content-center">
+        <div class="col-5 border rounded shadow-sm p-4">
+          <div id="form-appointment"></div>
+        </div>
+        <div class="col-6 border rounded shadow-sm p-4">
+          <div id="calendar" class="mb-4"></div>
+          <div id="time"></div>
+        </div>
       </div>
-      <div class="col-6 border rounded-end shadow-sm p-4">
-        <div id="calendar"></div>
-        <div id="time"></div>
+      <div class="d-grid gap-2 mt-3">
+        <button class="btn btn-primary shadow-sm" type="button" data-bs-toggle="modal"
+          data-bs-target="#confirmModal">Schedule</button>
       </div>
-    </div>
-    <div class="d-grid gap-2 mt-3">
-      <button class="btn btn-primary shadow-sm" type="button" data-bs-toggle="modal"
-        data-bs-target="#confirmModal">Schedule</button>
     </div>
   </div>
 
