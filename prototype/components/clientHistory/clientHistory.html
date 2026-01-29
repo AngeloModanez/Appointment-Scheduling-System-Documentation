@@ -1,0 +1,89 @@
+<div class="mt-4">
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-light px-3 border" type="button">
+      <img src="/prototype/components/clientHistory/svg/search.svg" width="20" height="20" alt="Search client">
+    </button>
+    <input class="form-control" placeholder="Search client name" aria-label="Search client name">
+  </div>
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Client</th>
+        <th scope="col">Area</th>
+        <th scope="col">Professional</th>
+        <th scope="col">Appointment Type</th>
+        <th scope="col">Time</th>
+        <th scope="col">Date</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <a href="/prototype/pages/clients.html">Ana Nogueira</a>
+        </td>
+        <td>Orthopedics</td>
+        <td>
+          <a href="/prototype/pages/professionals.html">Dr. Roberto Almeida</a>
+        </td>
+        <td>Private</td>
+        <td>11:00</td>
+        <td>23/03/2026</td>
+        <td> <span class="badge bg-primary">Scheduled</span></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+          <a href="/prototype/pages/clients.html">Ana Nogueira</a>
+        </td>
+        <td>Orthopedics</td>
+        <td>
+          <a href="/prototype/pages/professionals.html">Dr. Roberto Almeida</a>
+        </td>
+        <td>Private</td>
+        <td>09:00</td>
+        <td>22/03/2026</td>
+        <td> <span class="badge bg-danger">Canceled</span></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>
+          <a href="/prototype/pages/clients.html">Ana Nogueira</a>
+        </td>
+        <td>Cardiology</td>
+        <td>
+          <a href="/prototype/pages/professionals.html">Dr. Anna Brown</a>
+        </td>
+        <td>Municipal Insurance</td>
+        <td>10:00</td>
+        <td>02/03/2026</td>
+        <td> <span class="badge bg-success">Present</span></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>
+          <a href="/prototype/pages/clients.html">Ana Nogueira</a>
+        </td>
+        <td>Cardiology</td>
+        <td>
+          <a href="/prototype/pages/professionals.html">Dr. Anna Brown</a>
+        </td>
+        <td>Municipal Insurance</td>
+        <td>15:00</td>
+        <td>15/03/2026</td>
+        <td> <span class="badge bg-secondary">Absent</span></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div id="paginator"></div>
+</div>
+
+<script>
+  $(function () {
+    $("#paginator").load("../components/paginator/paginator.html");
+  })
+</script>

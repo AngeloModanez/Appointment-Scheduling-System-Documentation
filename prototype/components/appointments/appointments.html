@@ -1,0 +1,284 @@
+<div class="input-group mb-3">
+  <button class="btn btn-outline-light px-3 border" type="button">
+    <img src="/prototype/components/appointments/svg/search.svg" width="20" height="20"
+      alt="Search for area, client or professional">
+  </button>
+  <input class="form-control" placeholder="Search for area, client or professional"
+    aria-label="Search for area, client or professional">
+</div>
+
+
+<div class="mb-2">
+  <strong>Morning</strong>
+  <span class="text-muted ms-2">08:00 - 11:30</span>
+</div>
+<hr class="mt-1">
+
+<div class="row g-4 mb-4">
+  <div class="col-4">
+    <button class="card h-100 w-100 text-start shadow-sm rounded-3" data-bs-toggle="modal"
+      data-bs-target="#modalAbsent">
+      <div class="card-body">
+        <span class="mb-3 badge bg-secondary">Absent</span>
+        <h6 class="mb-1">Maria Silva</h6>
+        <div class="small text-muted mb-2">
+          <div><strong>Area:</strong> Cardiology</div>
+          <div><strong>Professional:</strong> Dr. Anna Brown</div>
+        </div>
+        <div>
+          <div><strong>Type:</strong> Private</div>
+          <div><strong>Time:</strong> 09:00</div>
+          <div><strong>Date:</strong> 23/03/2026</div>
+        </div>
+      </div>
+    </button>
+  </div>
+
+  <div class="col-4">
+    <button class="card h-100 w-100 text-start shadow-sm rounded-3" data-bs-toggle="modal"
+      data-bs-target="#modalPresent">
+      <div class="card-body">
+        <span class="mb-3 badge bg-success">Present</span>
+        <h6 class="mb-1">João Pereira</h6>
+        <div class="small text-muted mb-2">
+          <div><strong>Area:</strong> Neurology</div>
+          <div><strong>Professional:</strong> Dr. Carolina Farias</div>
+        </div>
+        <div>
+          <div><strong>Type:</strong> Health Insurance</div>
+          <div><strong>Time:</strong> 10:30</div>
+          <div><strong>Date:</strong> 23/03/2026</div>
+        </div>
+      </div>
+    </button>
+  </div>
+
+  <div class="col-4">
+    <button class="card h-100 w-100 text-start shadow-sm rounded-3" data-bs-toggle="modal"
+      data-bs-target="#modalInProgress">
+      <div class="card-body">
+        <span class="mb-3 badge bg-primary">Scheduled</span>
+        <h6 class="mb-1">Ana Nogueira</h6>
+        <div class="small text-muted mb-2">
+          <div><strong>Area:</strong> Orthopedics</div>
+          <div><strong>Professional:</strong> Dr. Roberto Almeida</div>
+        </div>
+        <div>
+          <div><strong>Type:</strong> Private</div>
+          <div><strong>Time:</strong> 11:00</div>
+          <div><strong>Date:</strong> 23/03/2026</div>
+        </div>
+      </div>
+    </button>
+  </div>
+</div>
+
+
+<div class="mb-2">
+  <strong>Afternoon</strong>
+  <span class="text-muted ms-2">14:00 - 17:30</span>
+</div>
+<hr class="mt-1">
+
+<div class="row g-4">
+  <div class="col-4">
+    <button class="card h-100 w-100 text-start shadow-sm rounded-3" data-bs-toggle="modal"
+      data-bs-target="#modalCanceled">
+      <div class="card-body">
+        <span class="mb-3 badge bg-danger">Canceled</span>
+        <h6 class="mb-1">Ricardo Souza</h6>
+        <div class="small text-muted mb-2">
+          <div><strong>Area:</strong> Gastroenterology</div>
+          <div><strong>Professional:</strong> Dr. Helena Monteiro</div>
+        </div>
+        <div>
+          <div><strong>Type:</strong> Municipal Insurance</div>
+          <div><strong>Time:</strong> 15:00</div>
+          <div><strong>Date:</strong> 23/03/2026</div>
+        </div>
+      </div>
+    </button>
+  </div>
+</div>
+
+<div class="modal fade" id="modalAbsent" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header py-2">
+        <h6 class="modal-title">Appointment Details</h6>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <span class="badge bg-secondary mb-3">Absent</span>
+        <div class="row g-2">
+          <div class="col-6">
+            <small class="text-muted">Client</small>
+            <div class="fw-semibold">Maria Silva</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Area</small>
+            <div class="fw-semibold">Cardiology</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Professional</small>
+            <div class="fw-semibold">Dr. Anna Brown</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Type</small>
+            <div class="fw-semibold">Private</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Time</small>
+            <div class="fw-semibold">09:00</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Date</small>
+            <div class="fw-semibold">23/03/2026</div>
+          </div>
+          <div class="col-12">
+            <small class="text-muted">Notes</small>
+            <div class="fw-semibold">Split into three installments</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer py-2">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalPresent" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header py-2">
+        <h6 class="modal-title">Appointment Details</h6>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <span class="badge bg-success mb-3">Present</span>
+        <div class="row g-2">
+          <div class="col-6">
+            <small class="text-muted">Client</small>
+            <div class="fw-semibold">João Pereira</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Area</small>
+            <div class="fw-semibold">Neurology</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Professional</small>
+            <div class="fw-semibold">Dr. Carolina Farias</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Type</small>
+            <div class="fw-semibold">Health Insurance</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Time</small>
+            <div class="fw-semibold">10:30</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Date</small>
+            <div class="fw-semibold">23/03/2026</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer py-2">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalInProgress" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header py-2">
+        <h6 class="modal-title">Appointment Scheduled</h6>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <span class="badge bg-primary mb-3">Scheduled</span>
+        <div class="row g-2">
+          <div class="col-6">
+            <small class="text-muted">Client</small>
+            <div class="fw-semibold">Ana Nogueira</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Area</small>
+            <div class="fw-semibold">Orthopedics</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Professional</small>
+            <div class="fw-semibold">Dr. Roberto Almeida</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Type</small>
+            <div class="fw-semibold">Private</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Date</small>
+            <div class="fw-semibold">23/03/2026</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Time</small>
+            <div class="fw-semibold">11:00</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer py-2">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+        </button>
+        <button class="btn btn-primary">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCanceled" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header py-2">
+        <h6 class="modal-title">Canceled Appointment</h6>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <span class="badge bg-danger mb-3">Canceled</span>
+        <div class="row g-2">
+          <div class="col-6">
+            <small class="text-muted">Client</small>
+            <div class="fw-semibold">Ricardo Souza</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Area</small>
+            <div class="fw-semibold">Gastroenterology</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Professional</small>
+            <div class="fw-semibold">Dr. Helena Monteiro</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Type</small>
+            <div class="fw-semibold">Municipal Insurance</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Time</small>
+            <div class="fw-semibold">15:00</div>
+          </div>
+          <div class="col-6">
+            <small class="text-muted">Date</small>
+            <div class="fw-semibold">23/03/2026</div>
+          </div>
+          <div class="col-12">
+            <small class="text-muted">Cancellation Reason</small>
+            <div class="fw-semibold">Traffic delay</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer py-2">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<div class="mt-4">
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-light px-3 border" type="button">
+      <img src="/prototype/components/cancelAppointment/svg/search.svg" width="20" height="20"
+        alt="Search for a client, professional or area">
+    </button>
+    <input class="form-control" placeholder="Search for a client, professional or area"
+      aria-label="Search for a client, professional or area">
+  </div>
+  <table class="table table-bordered table-hover">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Client</th>
+        <th scope="col">Area</th>
+        <th scope="col">Professional</th>
+        <th scope="col">Appointment Type</th>
+        <th scope="col">Time</th>
+        <th scope="col">Date</th>
+        <th scope="col">Cancel</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <a href="/prototype/pages/clients.html">Ana Nogueira</a>
+        </td>
+        <td>Orthopedics</td>
+        <td>
+          <a href="/prototype/pages/professionals.html">Dr. Roberto Almeida</a>
+        </td>
+        <td>Private</td>
+        <td>11:00</td>
+        <td>23/03/2026</td>
+        <td>
+          <img src="/prototype/components/cancelAppointment/svg/x-square.svg" width="20" height="20"
+            alt="Cancel appointment" data-bs-toggle="modal" data-bs-target="#modalCancellation">
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+          <a href="/prototype/pages/clients.html">Kevin</a>
+        </td>
+        <td>Physiotherapist</td>
+        <td>
+          <a href="/prototype/pages/professionals.html">Dr. Ralph Williams</a>
+        </td>
+        <td>Municipal Insurance</td>
+        <td>15:00</td>
+        <td>13/02/2026</td>
+        <td>
+          <img src="/prototype/components/cancelAppointment/svg/x-square.svg" width="20" height="20"
+            alt="Cancel appointment" data-bs-toggle="modal" data-bs-target="#modalCancellation">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div id="paginator"></div>
+</div>
+
+<div class="modal fade" id="modalCancellation" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header py-2">
+        <h6 class="modal-title">Cancel Appointment</h6>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <label class="form-label small">Cancellation Reason</label>
+        <textarea class="form-control" rows="3" placeholder="Describe the reason..."></textarea>
+        <div class="text-danger">
+          <small><sup>*</sup>Cancellation reason is required</small>
+        </div>
+      </div>
+      <div class="modal-footer py-2">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+        <button class="btn btn-danger">Confirm Cancellation</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    $("#paginator").load("../components/paginator/paginator.html");
+  })
+</script>
