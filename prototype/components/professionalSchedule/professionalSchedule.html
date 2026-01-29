@@ -1,0 +1,32 @@
+<form>
+  <div class="row mb-4">
+    <div class="col-6">
+      <label for="professional" class="form-label">Professional:</label>
+      <select class="form-select" id="professional" aria-label="Select a professional">
+        <option selected disabled>Select a professional</option>
+        <option value="1">Dr. Anna Brown</option>
+        <option value="2">Dr. Ralph Williams</option>
+      </select>
+    </div>
+
+    <div class="col-6">
+      <label for="area" class="form-label">Area:</label>
+      <select class="form-select" id="area" aria-label="Select an area">
+        <option selected disabled>Select an area</option>
+        <option value="1">General Practitioner</option>
+        <option value="2">Physiotherapist</option>
+        <option value="3">Cardiologist</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="weekday" class="mb-4"></div>
+  <div id="time"></div>
+</form>
+
+<script>
+  $(function () {
+    $("#weekday").load("/prototype/components/weekday/weekday.html")
+    $("#time").load("/prototype/components/time/time.html")
+  })
+</script>
