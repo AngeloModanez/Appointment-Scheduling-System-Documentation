@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="nav-bar"></div>
+
+  <div class="container my-5">
+    <div class="border rounded shadow-sm p-4">
+      <div class="display-6 mb-4">Welcome to Scheduling System</div>
+      <div class="mb-5">
+        <div class="mb-4">
+          <div class="mb-2">
+            <strong>Administration</strong>
+            <span class="text-muted">• System Setup</span>
+          </div>
+          <hr class="mt-1">
+
+          <div class="row g-4 align-items-stretch">
+            <div id="cardArea" class="col-3"></div>
+            <div id="cardProfessionals" class="col-3"></div>
+            <div id="cardTypes" class="col-3"></div>
+            <div id="cardClientsAdm" class="col-3"></div>
+            <div id="cardUsers" class="col-3"></div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <div class="mb-2">
+            <strong>Operations</strong>
+            <span class="text-muted">• Daily Management</span>
+          </div>
+          <hr class="mt-1">
+
+          <div class="row g-4 align-items-stretch">
+            <div id="cardClientsOp" class="col-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="mb-4">
+          <div class="mb-2">
+            <strong>Appointments</strong>
+            <span class="text-muted">• Scheduling & Tracking</span>
+          </div>
+          <hr class="mt-1">
+
+          <div class="row g-4 align-items-stretch">
+            <div id="cardAppointments" class="col-3"></div>
+            <div id="cardSchedule" class="col-3"></div>
+            <div id="cardCancel" class="col-3"></div>
+            <div id="cardClientHistory" class="col-3"></div>
+            <div id="cardProfessionalSchedule" class="col-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $("#nav-bar").load("../components/navbar/navbar.html");
+      $("#cardArea").load("/prototype/components/home/management/cardArea.html")
+      $("#cardProfessionals").load("/prototype/components/home/management/cardProfessionals.html")
+      $("#cardTypes").load("/prototype/components/home/management/cardTypes.html")
+      $("#cardClientsAdm").load("/prototype/components/home/management/cardClients.html")
+      $("#cardClientsOp").load("/prototype/components/home/management/cardClients.html")
+      $("#cardUsers").load("/prototype/components/home/management/cardUsers.html")
+      $("#cardAppointments").load("/prototype/components/home/appointments/cardAppointments.html")
+      $("#cardSchedule").load("/prototype/components/home/appointments/cardSchedule.html")
+      $("#cardCancel").load("/prototype/components/home/appointments/cardCancel.html")
+      $("#cardClientHistory").load("/prototype/components/home/appointments/cardClientHistory.html")
+      $("#cardProfessionalSchedule").load("/prototype/components/home/appointments/cardProfessionalSchedule.html")
+    })
+  </script>
+</body>
+
+</html>
