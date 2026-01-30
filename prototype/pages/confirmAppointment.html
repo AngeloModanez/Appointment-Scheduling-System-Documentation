@@ -15,7 +15,36 @@
   <div class="container my-5">
     <div class="border rounded shadow-sm p-4">
       <div class="display-6 mb-4">Today’s Appointments:</div>
-      <div id="appointments"></div>
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-light px-3 border" type="button">
+          <img src="/prototype/components/appointments/svg/search.svg" width="20" height="20"
+            alt="Search for area, client or professional">
+        </button>
+        <input class="form-control" placeholder="Search for area, client or professional"
+          aria-label="Search for area, client or professional">
+      </div>
+
+      <div class="mb-2">
+        <strong>Morning</strong>
+        <span class="text-muted ms-2">08:00 - 11:30</span>
+      </div>
+      <hr class="mt-1">
+
+      <div class="row mb-4 g-4">
+        <div id="cardAbsent" class="col-4"></div>
+        <div id="cardPresent" class="col-4"></div>
+        <div id="cardInProgress" class="col-4"></div>
+      </div>
+
+      <div class="mb-2">
+        <strong>Afternoon</strong>
+        <span class="text-muted ms-2">14:00 - 17:30</span>
+      </div>
+      <hr class="mt-1">
+
+      <div class="row g-4">
+        <div id="cardCanceled" class="col-4"></div>
+      </div>
     </div>
   </div>
 
@@ -28,7 +57,10 @@
   <script>
     $(function () {
       $("#nav-bar").load("../components/navbar/navbar.html");
-      $("#appointments").load("../components/appointments/appointments.html");
+      $("#cardAbsent").load("../components/appointments/cardAbsent.html");
+      $("#cardPresent").load("../components/appointments/cardPresent.html");
+      $("#cardInProgress").load("../components/appointments/cardInProgress.html");
+      $("#cardCanceled").load("../components/appointments/cardCanceled.html");
     })
   </script>
 </body>
