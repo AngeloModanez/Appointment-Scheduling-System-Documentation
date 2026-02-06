@@ -8,3 +8,6 @@ Documentation for the MVP appointment scheduling system used to manage clinic pr
 
 ### Class Model
 ![Class Model](/out/docs/model/model.png)
+
+### End Points
+![End Points](/out/docs/end-points/end-points.png)
